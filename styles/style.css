@@ -16,6 +16,7 @@ p {
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 
@@ -71,6 +72,69 @@ img {
   max-width: 80%;
   margin-bottom: 1rem;
 }
+
+.info__section-one__title {
+  color:#a59678;
+  font-family: var(--oswald);
+}
+
+.info__section-one__pgr-one,
+.info__section-one__pgr-two{
+  font-family: var(--monty);
+}
+
+.info__section-two__card__title {
+  font-family: var(--oswald);
+  text-align: center;
+  margin-bottom: 1.5rem;;
+}
+
+.info__section-two__card__paragraph {
+  font-family: var(--monty);
+}
+
+.foo__heading {
+  font-family: var(--oswald);
+  color: white;
+  text-align: center;
+}
+
+.foo__info__title {
+  color: #a59678;
+  font-family: var(--oswald);
+  font-size: 1.5rem;
+}
+
+.foo__info__pgr {
+  color: white;
+  font-family: var(--monty);
+}
+
+.foo__nav-one__link, 
+.foo__nav-two__link, 
+.foo__nav-three__link {
+  font-family: var(--monty);
+}
+
+
+.foo__nav-one__link--golden {
+  color: #a59678;
+  font-family: var(--oswald);
+  font-size: 1.5rem;
+}
+
+.foo__nav-two__link--golden {
+  color: #a59678;
+  font-family: var(--oswald);
+  font-size: 1.5rem;
+}
+
+.foo__nav-three__link--golden {
+  color: #a59678;
+  font-family: var(--oswald);
+  font-size: 1.5rem;
+}
+
 
 .nav__image-container:hover {
   cursor: pointer;
@@ -165,6 +229,70 @@ img {
   padding: 10% 0;
 }
 
+.info {
+  padding: 5rem 0rem;
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+.info__section-one__img-con {
+  margin: 2rem 0rem;
+}
+
+
+.info__section-two {
+  padding-top: 4rem;
+}
+
+.info__section-two__card {
+  background-color: #3b4050;
+  color: white;
+  padding: 1.5rem 2rem;
+  margin: 1rem 0rem;
+  width: 80%;
+  margin: 1rem auto;
+}
+
+.foo {
+  background-color: #2e323f;
+  padding: 3rem 0rem;
+}
+
+.foo__info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.foo__nav-zero {
+  width: 80%;
+  margin: 1.5rem auto;
+  text-align: center;
+}
+
+.foo__nav-one,.foo__nav-two,.foo__nav-three {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 2rem ;
+}
+
+.foo__nav-one__link {
+  margin: .3rem 0;
+}
+
+.foo__nav-two__link {
+  margin: .3rem 0;
+}
+
+.foo__nav-three__link {
+  margin: .3rem 0;
+}
+
+.foo__nav-three--no-margin {
+  margin-bottom: -1rem;
+}
+
 @media (min-width: 700px) {
   .hero-content {
     padding: 7% 0rem 7% 0rem;
@@ -196,7 +324,6 @@ img {
 
   .nav__image-container {
     width: 30%;
-    border: 3px solid red;
   }
 
   .nav__image-container > img {
