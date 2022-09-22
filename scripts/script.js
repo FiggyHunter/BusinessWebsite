@@ -5,8 +5,9 @@ const navCtrTwo = document.getElementsByClassName('nav__container-two')[0];
 const navContainer = document.getElementsByClassName('container')[0];
 const body = document.body;
 
+
 logo.addEventListener("click",()=>{window.location='index.html';}) 
-hamburgerMenu.addEventListener("click",()=>{
+hamburgerMenu.addEventListener("click", ()=>{
     navCtrOne.classList.toggle("nav__container-one--visible");
     navCtrTwo.classList.toggle("nav__container-two--visible");
     navContainer.classList.toggle("container--visible");
