@@ -8,6 +8,12 @@ const body = document.body;
 
 logo.addEventListener("click",()=>{window.location='index.html';}) 
 hamburgerMenu.addEventListener("click", ()=>{
+
+    if(navContainer.classList.contains("container--visible")) {
+        setTimeout( () => {navContainer.style.zIndex = -10}, 1000)
+    }
+    else {{navContainer.style.zIndex = 10}}
+
     navCtrOne.classList.toggle("nav__container-one--visible");
     navCtrTwo.classList.toggle("nav__container-two--visible");
     navContainer.classList.toggle("container--visible");
