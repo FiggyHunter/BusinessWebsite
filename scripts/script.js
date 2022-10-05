@@ -4,15 +4,21 @@ const navCtrOne = document.getElementsByClassName('nav__container-one')[0];
 const navCtrTwo = document.getElementsByClassName('nav__container-two')[0];
 const navContainer = document.getElementsByClassName('container')[0];
 const body = document.body;
+let clickPreventer = false;
 
 
 logo.addEventListener("click",()=>{window.location='index.html';}) 
 hamburgerMenu.addEventListener("click", ()=>{
 
+    if(clickPreventer == true)
+        return;
+
+    clickPreventer = true;
+
     if(navContainer.classList.contains("container--visible")) {
-        setTimeout( () => {navContainer.style.zIndex = -10}, 1000)
+        setTimeout( () => {navContainer.style.zIndex = -10; clickPreventer = false;}, 1000)
     }
-    else {{navContainer.style.zIndex = 10}}
+    else {{navContainer.style.zIndex = 10; clickPreventer = false;}}
 
     navCtrOne.classList.toggle("nav__container-one--visible");
     navCtrTwo.classList.toggle("nav__container-two--visible");
